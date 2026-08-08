@@ -26,6 +26,26 @@ Avant d'écrire UN SEUL mot, l'utilisateur doit avoir fourni :
 | R3 — Pairing | Si tool_pairing, au moins 2 outils | Warn : "Ajoute un 2e outil pour le pairing" |
 | R4 — CTA keyword | Mot-clé CTA en majuscules | Warn : "CTA habituellement en MAJUSCULES" |
 | R5 — Preuve cohérente | proof_type aligné avec uploads | **REFUSE** si selfie sans photo, etc. |
+| R6 — Ressource livrable | la ressource promise est disponible, vérifiable et envoyable | **REFUSE** : "Donne l'URL de la ressource, je la teste avant d'écrire le post" |
+
+### R6 en détail
+
+Un lead magnet promet une ressource. Si elle n'existe pas au moment de
+publier, le post est un mensonge et chaque commentaire devient une dette.
+Avant d'écrire un seul mot, la ressource doit satisfaire les trois conditions :
+
+| Condition | Ce que ça veut dire | Comment on vérifie |
+|---|---|---|
+| **Disponible** | elle existe déjà, à une URL stable et publique | l'URL est fournie, pas promise |
+| **Vérifiable** | l'URL répond 200 et sert le bon contenu | requête réelle avant génération |
+| **Envoyable** | c'est un lien collable dans un DM | pas un fichier local, pas une pièce jointe à uploader une par une |
+
+Un lien mort, un repo privé, un Drive en accès restreint ou un fichier qui
+n'existe que sur ton disque violent R6. Un zip que tu dois envoyer à la main à
+chaque personne le viole aussi : à 50 commentaires, tu abandonnes.
+
+**Teste l'URL avant d'écrire.** Une ressource qui renvoie 404 pendant que
+200 personnes commentent coûte plus cher que l'absence de post.
 
 **N'invente JAMAIS** : chiffres non fournis, marques non listées, clients anonymes inventés, durées de test (« j'ai testé 7 semaines »), expérience (« +10 ans d'expérience »). Si l'utilisateur ne le dit pas, ça n'existe pas.
 

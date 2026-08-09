@@ -1,9 +1,9 @@
 ---
 name: publiar-lead-magnet
-description: Génère un lead magnet LinkedIn complet (post texte + brief visuel) suivant la méthode Publiar — 8 archétypes visuels, structure standardisée, règles anti-hallucination, inspiré du corpus de 45 lead magnets analysés. Trigger sur "génère un lead magnet", "crée un post LinkedIn lead magnet", "écris un post style Publiar", "post LinkedIn pour [outil]", "lead magnet pour [sujet]". S'invoque AUSSI quand l'utilisateur veut créer un post LinkedIn qui propose une ressource en échange d'un commentaire ("Commente XXX pour recevoir...").
+description: Génère un lead magnet LinkedIn complet (post texte + brief visuel) suivant la méthode Publiar : 8 archétypes visuels, structure standardisée, règles anti-hallucination, inspiré du corpus de 45 lead magnets analysés. Trigger sur "génère un lead magnet", "crée un post LinkedIn lead magnet", "écris un post style Publiar", "post LinkedIn pour [outil]", "lead magnet pour [sujet]". S'invoque AUSSI quand l'utilisateur veut créer un post LinkedIn qui propose une ressource en échange d'un commentaire ("Commente XXX pour recevoir...").
 ---
 
-# Publiar Lead Magnet — méthode complète
+# Publiar Lead Magnet : méthode complète
 
 Ce skill encode la méthode Publiar pour générer un lead magnet LinkedIn de qualité, sans hallucination, structuré comme les 45 lead magnets winners du corpus analysé.
 
@@ -21,12 +21,12 @@ Avant d'écrire UN SEUL mot, l'utilisateur doit avoir fourni :
 
 | Règle | Condition | Action si violée |
 |---|---|---|
-| R1 — Matière | Au moins 1 outil OU 1 chiffre OU 1 preuve uploadée | **REFUSE** : "Donne au moins un outil, un chiffre ou une preuve concrète" |
-| R2 — Source du chiffre | Si chiffre annoncé, source obligatoire | **REFUSE** : "Indique d'où vient ce chiffre : mesure perso datée / source officielle / benchmark public / cas client" |
-| R3 — Pairing | Si tool_pairing, au moins 2 outils | Warn : "Ajoute un 2e outil pour le pairing" |
-| R4 — CTA keyword | Mot-clé CTA en majuscules | Warn : "CTA habituellement en MAJUSCULES" |
-| R5 — Preuve cohérente | proof_type aligné avec uploads | **REFUSE** si selfie sans photo, etc. |
-| R6 — Ressource livrable | la ressource promise est disponible, vérifiable et envoyable | **REFUSE** : "Donne l'URL de la ressource, je la teste avant d'écrire le post" |
+| R1 · Matière | Au moins 1 outil OU 1 chiffre OU 1 preuve uploadée | **REFUSE** : "Donne au moins un outil, un chiffre ou une preuve concrète" |
+| R2 · Source du chiffre | Si chiffre annoncé, source obligatoire | **REFUSE** : "Indique d'où vient ce chiffre : mesure perso datée / source officielle / benchmark public / cas client" |
+| R3 · Pairing | Si tool_pairing, au moins 2 outils | Warn : "Ajoute un 2e outil pour le pairing" |
+| R4 · CTA keyword | Mot-clé CTA en majuscules | Warn : "CTA habituellement en MAJUSCULES" |
+| R5 · Preuve cohérente | proof_type aligné avec uploads | **REFUSE** si selfie sans photo, etc. |
+| R6 · Ressource livrable | la ressource promise est disponible, vérifiable et envoyable | **REFUSE** : "Donne l'URL de la ressource, je la teste avant d'écrire le post" |
 
 ### R6 en détail
 
@@ -127,7 +127,7 @@ Le post LinkedIn lead magnet suit toujours ces 7 sections :
 - **Pas de hashtags dans le corps** (ils sortent dans un block séparé)
 - **Aucun chiffre non sourcé**
 
-## 4. Brief visuel — spec JSON
+## 4. Brief visuel : spec JSON
 
 À la fin du post, produis un `visual_spec` JSON utilisable par `publiar-mcp` ou n'importe quel renderer Pillow. Format selon l'archétype déduit :
 
@@ -144,7 +144,7 @@ Le post LinkedIn lead magnet suit toujours ces 7 sections :
 // youtube_thumbnail
 { archetype: "youtube_thumbnail", primary_headline: "LE GUIDE COMPLET", secondary_accent: "TOP 1%", brand_sticker_label: "CLAUDE × COWORK" }
 
-// selfie_workspace (upload requis — donne le champ vide à remplir par l'user)
+// selfie_workspace (upload requis, donne le champ vide à remplir par l'user)
 { archetype: "selfie_workspace", base_photo_url: "", top_annotation: "...", crossed_out_brand: "...", highlighted_brand: "...", caption_bottom: "..." }
 
 // system_workflow_screenshot (upload requis)
@@ -194,7 +194,7 @@ Quand tu génères un lead magnet, structure ta réponse en 3 blocks :
 
 Quand tu écris, garde en tête ces patterns winners (45 lead magnets analysés) :
 
-**Top engagement (likes) — par archétype :**
+**Top engagement (likes), par archétype :**
 - `tool_pairing` : "J'ai supprimé mon abonnement ChatGPT..." (1896 likes)
 - `tool_pairing` : "N8N c'est terminé, place aux workflows agentiques" (1181 likes)
 - `youtube_thumbnail` : "Claude Code 3500 → 35000 followers" (970 likes)
@@ -219,7 +219,7 @@ Si l'utilisateur a installé `publiar-mcp` ET configuré sa clé MCP dans ton cl
 - Appeler `generate_lead_magnet(input)` si tu préfères déléguer toute la génération au backend Publiar (consomme un crédit Claude API côté Publiar)
 - Appeler `register_published(post_urn, ...)` après que l'utilisateur a publié sur LinkedIn
 
-Mais l'ESSENTIEL — écrire le post + brief visuel — tu peux le faire **sans aucun appel MCP**, juste en suivant ce skill. Le MCP est pour les actions backend (rendu PNG, persistance, etc.).
+Mais l'ESSENTIEL, écrire le post + brief visuel, tu peux le faire **sans aucun appel MCP**, juste en suivant ce skill. Le MCP est pour les actions backend (rendu PNG, persistance, etc.).
 
 ## 8. Garde-fous
 

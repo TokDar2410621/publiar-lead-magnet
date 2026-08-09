@@ -2,9 +2,9 @@
 
 **Un skill Claude qui écrit des lead magnets LinkedIn et refuse d'inventer.**
 
-> **EN** — A Claude Code skill that writes LinkedIn lead magnets and refuses to
+> **EN.** A Claude Code skill that writes LinkedIn lead magnets and refuses to
 > fabricate facts. It ships the method behind 45 analyzed posts: 8 visual
-> archetypes, a proof-to-archetype matrix, and 5 blocking anti-hallucination
+> archetypes, a proof-to-archetype matrix, and 6 blocking anti-hallucination
 > rules. Generated posts are in French. MIT.
 
 ## Le problème

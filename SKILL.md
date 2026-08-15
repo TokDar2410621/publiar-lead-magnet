@@ -47,6 +47,7 @@ Avant d'écrire UN SEUL mot, l'utilisateur doit avoir fourni :
 | R6 · Ressource livrable | la ressource promise est disponible, vérifiable et envoyable | **REFUSE** : "Donne l'URL de la ressource, je la teste avant d'écrire le post" |
 | R7 · Bénéfice lecteur | le post dit EXPLICITEMENT ce que le lecteur y gagne | **REFUSE** de finaliser : un lecteur qui doit déduire le bénéfice ne le déduit pas |
 | R8 · Clarté | une seule lecture suffit : un seul acteur nommé, aucun jargon non présenté, aucune conclusion à déduire | Réécrire avant de livrer |
+| R9 · Voix vécue | toute solution recommandée est ancrée dans le vécu de l'auteur ou de ses clients (« ce qui marche pour moi »), jamais énoncée comme norme (« le meilleur X », « la bonne façon ») | Réécrire à la première personne ancrée : une pratique non vécue ne se prescrit pas |
 
 ### R6 en détail
 
@@ -142,6 +143,13 @@ l'angle le plus factuel.
 **Le jury juge, il n'invente pas** : un juge qui propose d'ajouter un
 chiffre ou une promesse absente de la matière viole R1-R2. Ses suggestions
 se limitent à reformuler ce qui existe.
+
+**Le gardien de doctrine porte aussi R9** : toute phrase normative sur une
+pratique que l'auteur n'a pas vécue est recalée. « Le prompt qui fonctionne
+le mieux pour moi », jamais « le meilleur prompt ». La critique sourcée
+d'un tiers (études, docs) reste permise ; c'est la SOLUTION qui doit être
+vécue. La voix vécue est aussi la plus solide : « chez moi ça donne X » ne
+peut pas être démenti, « le meilleur X » attire la réfutation.
 
 ### Le hook : la discipline
 

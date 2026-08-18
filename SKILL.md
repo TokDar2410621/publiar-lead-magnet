@@ -122,6 +122,20 @@ CE QUI l'arrête (un chiffre, un nom, une tension) ou CE QUI le fait glisser
 bien écrit » n'est pas une réponse : le scrolleur ne juge pas l'écriture,
 il juge l'arrêt.
 
+**Le scrolleur est un PROSPECT calibré, pas un pair.** Il incarne la cible
+qui achète des résultats (des clients, du trafic, du temps), pas le
+collègue builder qui collectionne les setups. Il juge avec les hooks
+gagnants du marché sous les yeux, dont le point commun est un résultat
+désirable, énorme et personnel (« J'ai supprimé mon abonnement ChatGPT »,
+« de 3 500 à 35 000 followers »). Il note le DÉSIR de 0 à 10 : à quel
+point il VEUT ce que le post offre, indépendamment de la qualité
+d'écriture. Sous 6, le post ne part pas. Leçon mesurée : une semaine de
+posts à craft 6/10 mais désir 3/10 a fait 8 « ne mérite pas l'arrêt » sur
+8 au jury aveugle, et 3 % de réaction en ligne. Le piège récurrent : un
+hook qui vend le process du builder (« j'ai analysé 45 posts », « mon
+outil refuse d'écrire ») au lieu du gain du lecteur (« ton visuel se
+choisit tout seul »).
+
 **Le lecteur pressé** lit le post entier, UNE fois, vite, sans revenir en
 arrière. À la fin il doit répondre sans relire :
 

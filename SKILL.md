@@ -1,6 +1,6 @@
 ---
 name: publiar-lead-magnet
-description: Génère un lead magnet LinkedIn complet suivant la méthode Publiar, de la ressource hébergée jusqu'au suivi des DM : 8 règles anti-hallucination (matière, ressource livrable, bénéfice lecteur, clarté), 8 archétypes visuels, jury de relecture (scrolleur + lecteur pressé), boucle publication → commentaires → DM → vues, inspiré du corpus de 45 lead magnets analysés. Trigger sur "génère un lead magnet", "crée un post LinkedIn lead magnet", "écris un post style Publiar", "post LinkedIn pour [outil]", "lead magnet pour [sujet]". S'invoque AUSSI quand l'utilisateur veut créer un post LinkedIn qui propose une ressource en échange d'un commentaire ("Commente XXX pour recevoir...").
+description: "Génère un lead magnet LinkedIn complet suivant la méthode Publiar, de la ressource hébergée jusqu'au suivi des DM : 8 règles anti-hallucination (matière, ressource livrable, bénéfice lecteur, clarté), 8 archétypes visuels, jury de relecture (scrolleur + lecteur pressé), boucle publication → commentaires → DM → vues, inspiré du corpus de 45 lead magnets analysés. Trigger sur \"génère un lead magnet\", \"crée un post LinkedIn lead magnet\", \"écris un post style Publiar\", \"post LinkedIn pour [outil]\", \"lead magnet pour [sujet]\". S'invoque AUSSI quand l'utilisateur veut créer un post LinkedIn qui propose une ressource en échange d'un commentaire (\"Commente XXX pour recevoir...\")."
 ---
 
 # Publiar Lead Magnet : méthode complète

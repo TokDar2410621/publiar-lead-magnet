@@ -129,12 +129,31 @@ gagnants du marché sous les yeux, dont le point commun est un résultat
 désirable, énorme et personnel (« J'ai supprimé mon abonnement ChatGPT »,
 « de 3 500 à 35 000 followers »). Il note le DÉSIR de 0 à 10 : à quel
 point il VEUT ce que le post offre, indépendamment de la qualité
-d'écriture. Sous 6, le post ne part pas. Leçon mesurée : une semaine de
+d'écriture. Sous 8, le post ne part pas. Leçon mesurée : une semaine de
 posts à craft 6/10 mais désir 3/10 a fait 8 « ne mérite pas l'arrêt » sur
 8 au jury aveugle, et 3 % de réaction en ligne. Le piège récurrent : un
 hook qui vend le process du builder (« j'ai analysé 45 posts », « mon
 outil refuse d'écrire ») au lieu du gain du lecteur (« ton visuel se
 choisit tout seul »).
+
+**Ce que ce score vaut vraiment, et ce qu'il ne vaut pas** (recherche
+02-knowledge/attention, 2026-08-20) : sur 17 681 tests A/B réels
+(Upworthy/LOLA), même un LLM fine-tuné plafonne à 47 % de précision pour
+prédire le titre gagnant, l'humain est au niveau du hasard. Ce jury relève
+le plancher, il élimine le faible, il ne prédit pas un gagnant. Le vrai
+gain vient du volume de tests réels (A/B multi-comptes), pas d'un juge
+plus sévère.
+
+**Contrôle anti-répétition, avant même le score de désir** : compare
+l'angle d'ouverture du hook (confession/erreur vécue, contraste chiffré,
+contrarian, histoire, question…) aux 5-8 derniers posts publiés
+(`list_published`). Un angle déjà réutilisé 2 fois récemment s'use à
+chaque réemploi et perd son pouvoir d'arrêt (loi de l'habituation, Rankin
+et al. 2009 : une technique de rupture réutilisée perd sa capacité à
+restaurer l'attention, et l'usure s'accélère à chaque cycle). Un jury à
+formule stable est structurellement condamné à noter favorablement des
+hooks de moins en moins efficaces dans la réalité : change d'angle plutôt
+que de forcer la mécanique qui a marché la dernière fois.
 
 **Le lecteur pressé** lit le post entier, UNE fois, vite, sans revenir en
 arrière. À la fin il doit répondre sans relire :
@@ -168,13 +187,32 @@ peut pas être démenti, « le meilleur X » attire la réfutation.
 ### Le hook : la discipline
 
 Les deux premières lignes sont tout ce que le fil montre avant « voir plus ».
+Les règles ci-dessous sont mesurées (LinkedIn réel, 309 614 posts AuthoredUp
+sauf mention contraire), pas des intuitions de style.
 
-- **Un chiffre ou un nom dès la première ligne.** Une ambiance ou une leçon
-  n'arrête personne.
-- **60 caractères max par ligne**, sinon le mobile replie et mange le hook.
+- **Moins de 40 caractères sur la première ligne si possible.** C'est la
+  fourchette la mieux engagée mesurée (+25 % vs plus de 200 caractères).
+  60 caractères reste le plafond dur, au-delà le mobile replie et mange le
+  hook.
+- **Premier mot : un pronom personnel** (mon, je, ton) quand c'est possible,
+  c'est l'effet le plus fort mesuré sur des titres réels (p=0,000). Un nom
+  marquant marche aussi.
+- **Le tu/vous se met en position objet** (« ce qu'on t'a dit »), jamais en
+  injonction (« tu devrais ») : la forme injonctive ne performe pas.
+- **Pas de question qui demande au lecteur de produire la réponse** : c'est
+  le type de hook le moins engagé mesuré sur LinkedIn (dernier de 5
+  structures testées). Un mot interrogatif qui ANNONCE une réponse reste
+  permis.
+- **Registre triste ou constatif, jamais peur ni colère** (mesuré à +0,7 %
+  pour la tristesse, -0,7 % pour la peur, 0 % pour la colère).
+- **Un chiffre dans le hook n'a aucun effet d'accroche prouvé** (seule étude
+  peer-reviewed testée : non significatif). Un chiffre sourcé s'écrit parce
+  qu'il est vrai (R2), jamais pour « accrocher ».
 - **Deux lignes, deux idées** : la première pose le fait qui accroche, la
   seconde le rend intriguant ou nomme les acteurs avec leurs verbes.
-- **Le hook ne promet que ce que le post prouve.**
+- **Le hook ne promet que ce que le post prouve** : une promesse ouverte et
+  non refermée est pénalisée structurellement (belief resolution effect),
+  pas juste mal vue.
 
 **N'invente JAMAIS** : chiffres non fournis, marques non listées, clients anonymes inventés, durées de test (« j'ai testé 7 semaines »), expérience (« +10 ans d'expérience »). Si l'utilisateur ne le dit pas, ça n'existe pas.
 
